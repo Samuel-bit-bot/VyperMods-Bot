@@ -1,0 +1,52 @@
+📋 GUÍA RÁPIDA PARA USAR EL BOT DE DISCORD
+
+1. 📥 INSTALAR DEPENDENCIAS
+   Abre una terminal y ejecuta:
+   ```
+   pip install discord.py python-dotenv
+   ```
+
+2. 🔑 CONFIGURAR TOKEN
+   - Abre el archivo `.env`
+   - Agrega tu token de Discord así:
+     ```
+     DISCORD_TOKEN=tu_token_aquí
+     ```
+   - Guarda el archivo
+
+3. 🎯 CONFIGURAR CANAL
+   - Abre `main.py`
+   - Busca la línea que dice:
+     ```python
+     TARGET_CHANNEL_ID = 1444970939866546176  # Cambia este número por el ID de tu canal
+     ```
+   - Reemplaza el número por el ID de tu canal de Discord
+   - Guarda el archivo
+
+4. ▶️ EJECUTAR EL BOT
+   - Abre una terminal en la carpeta del bot
+   - Ejecuta:
+     ```
+     python main.py
+     ```
+   - Si no funciona, prueba con:
+     ```
+     py main.py
+     ```
+
+5. ✅ VERIFICACIÓN
+   - El bot enviará automáticamente el mensaje al canal
+   - Verás un mensaje de confirmación en la terminal
+
+🛠️ SOLUCIÓN DE PROBLEMAS
+- Si ves "python no es reconocido":
+  - Instala Python desde python.org (marcando "Add Python to PATH")
+  - O usa `py` en lugar de `python`
+
+- Si falla el envío del mensaje:
+  - Verifica que el ID del canal sea correcto
+  - Asegúrate de que el bot tenga permisos para escribir en el canal
+
+📝 NOTAS
+- No compartas tu token con nadie
+- El bot debe estar en el servidor donde está el canal de destino
